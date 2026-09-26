@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cemzo Store - Frontend Developer Intern Assignment
 
-## Getting Started
+## Project Overview
+This is a responsive Product Listing Page built with React. It fetches product data from the `dummyjson.com` API and displays it in a grid format. The application includes search functionality, error handling, loading states, and a clean, responsive UI suitable for desktop, tablet, and mobile devices.
 
-First, run the development server:
+## Technologies Used
+- Next.js (App Router)
+- React
+- Tailwind CSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup/Run Instructions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository** (or download the source code):
+   ```bash
+   git clone <https://github.com/sohanur-rahman-coding/-Cemzo-Store>
+   cd cemzo
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+4. **Open in browser**:
+   Navigate to the URL provided in the terminal (usually `http://localhost:3000/`).
 
-To learn more about Next.js, take a look at the following resources:
+## Assumptions Made
+- A search by product title is implemented by directly querying the `dummyjson.com/products/search` endpoint instead of filtering the frontend locally. This allows searching through all products in the database rather than just a single page of results.
+- A debounce mechanism was used implicitly through `setTimeout` in the search to avoid hitting the API on every single keystroke excessively.
+- Tailwind CSS was selected as the lightweight styling approach for rapid UI development and easy responsive design.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Additional Features Implemented
+No bonus features from the assignment description were implemented due to time constraints, focusing on the core requirements of code structure, state handling, UI/UX, and responsiveness.
