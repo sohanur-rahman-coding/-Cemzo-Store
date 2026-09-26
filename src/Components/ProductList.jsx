@@ -1,4 +1,5 @@
-import ProductCard from './ProductCard';
+import ProductCard from "./ProductCard";
+
 
 export default function ProductList({ products }) {
   return (
